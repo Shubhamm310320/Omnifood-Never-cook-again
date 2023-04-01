@@ -1,0 +1,235 @@
+@charset "UTF-8";
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #e67e22;
+  --color-primary-light--1: #eb984e;
+  --color-primary-light--2: #fae5d3;
+  --color-primary-light--3: #fdf2e9;
+  --color-primary-dark--1: #cf711f;
+  --color-primary-dark--2: #45260a;
+  --color-green--vegetarian: #51cf66;
+  --color-green--vegan: #94d82d;
+  --color-yellow--paleo: #ffd43b;
+  --grey--1: #333;
+  --grey--2: #555;
+  --grey--3: #6f6f6f;
+  --grey--4: #767676;
+  --grey--5: #888;
+  --grey--6: #aaa;
+  --grey--7: #ddd;
+  --border-radius--sm: 4px;
+  --border-radius--md: 9px;
+  --border-radius--lg: 11px;
+  --border-radius--circle: 50%;
+  --border-radius--round: 10rem;
+  --lh--1: 1;
+  --lh--2: 1.05;
+  --lh--3: 1.2;
+  --lh--4: 1.6;
+  --lh--5: 1.8;
+  --pad-sides--tny: 0 3.2rem;
+  --pad-sides--sm: 0 4.8rem;
+  --pad-sides--md: 0 9.6rem;
+  --pad-sides--lg: 0 12.8rem;
+  --pad-top-btm-diff--tny: 4.8rem 0 3.2rem 0;
+  --pad-top-btm-diff--md: 4.8rem 0 9.6rem 0;
+  --pad-top-btm-diff--lg: 4.8rem 0 12.8rem 0;
+  --pad-top-btm-same--tny: 3.2rem 0;
+  --pad-top-btm-same--sm: 4.8rem 0;
+  --pad-top-btm-same--md: 9.6rem 0;
+  --pad-top-btm-same--lg: 12.8rem 0;
+  --pad-all--tny: 1.6rem;
+  --pad-all--sm: 3.2rem;
+  --pad-all--md: 9.6rem;
+  --pad-all--lg: 12.8rem;
+  --gap--vtn: 1.6rem;
+  --gap--tn: 2.4rem;
+  --gap--vsm: 3.2rem;
+  --gap--sm: 4.8rem;
+  --gap--md: 6.4rem;
+  --gap--lg: 9.8rem;
+  --gap--vlg: 12.8rem;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.heading-primary, .heading-secondary, .heading-tertiary {
+  font-weight: 700;
+  color: var(--grey--1);
+  letter-spacing: -0.5px;
+}
+
+.main section > * {
+  padding: var(--pad-sides--tny);
+}
+
+/* ###################
+NOTE: The typography styling section includes all of the typography/font definitions of this website but the font color definitions included in this section are only of the components that do not change color on any type of events or show any kind of animation effects with their font color.
+
+[ Please check the appropriate sass file for change such block or elements color styling!!! 😊 ]
+ ################### */
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey--2);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-primary--number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: var(--grey--7);
+  margin-bottom: 1.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.heading-sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary-dark--1);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.heading-featured {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: var(--grey--5);
+}
+
+.title-primary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--grey--1);
+  margin-bottom: 3.2rem;
+}
+.title-secondary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--grey--1);
+  margin-bottom: 1.6rem;
+}
+.title-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.title-sub {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  color: var(--color-primary-dark--1);
+  margin-bottom: 3.2rem;
+}
+
+.description-primary {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.description-secondary {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.nav__link:link, .nav__link:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--grey--1);
+  text-decoration: none;
+}
+.nav__link:hover, .nav__link:active {
+  color: var(--color-primary-dark--1);
+}
+.nav__link-cta:link, .nav__link-cta:visited {
+  color: var(--color-white);
+}
+
+.delivered__text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered__text span {
+  color: var(--color-primary-dark--1);
+  font-weight: 700;
+}
+
+.btn, .btn:link, .btn:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--grey--1);
+  text-transform: uppercase;
+}
+
+.meal-card__attribute {
+  font-size: 1.8rem;
+}
+
+.diets__list-item {
+  font-size: 1.8rem;
+  line-height: var(--lh--3);
+}
+
+.link--all-recipes:link, .link--all-recipes:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.link--all-recipes:hover, .link--all-recipes:active {
+  color: var(--color-primary-dark--1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary-light--3);
+  height: 9.6rem;
+}
+.header__logo {
+  max-height: 2.2rem;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

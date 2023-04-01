@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary-light--3);
+
+  height: 9.6rem;
+
+  &__logo {
+    max-height: 2.2rem;
+    max-width: 100%;
+  }
+}

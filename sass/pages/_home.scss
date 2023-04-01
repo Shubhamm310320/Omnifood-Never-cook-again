@@ -1,0 +1,44 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/placeholders";
+
+.header {
+}
+
+.main {
+  section {
+    @extend %pad_all_inner_elements;
+  }
+}
+
+.section {
+  // ***************************************** Section Hero
+  &-hero {
+    .hero {
+    }
+  }
+  // ***************************************** Section Featured-in
+  &-featured-in {
+  }
+
+  // ***************************************** Section How-it-works
+  &-how {
+  }
+
+  // ***************************************** Section Meals
+  &-meals {
+  }
+
+  // ***************************************** Section Testimonials
+  &-testimonials {
+  }
+
+  // ***************************************** Section Pricing
+  &-pricing {
+  }
+  // ***************************************** Section CTA
+  &-cta {
+  }
+}
+
+.footer {
+}

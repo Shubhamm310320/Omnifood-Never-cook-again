@@ -1,0 +1,14 @@
+{
+  "name": "omnifood---start-eating-healthy",
+  "version": "1.0.0",
+  "description": "a food service website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass ./sass/main.scss ./css/style.css -w"
+  },
+  "author": "Shubham Malviya",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}

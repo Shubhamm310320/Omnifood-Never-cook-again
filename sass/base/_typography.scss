@@ -1,0 +1,206 @@
+/* ###################
+NOTE: The typography styling section includes all of the typography/font definitions of this website but the font color definitions included in this section are only of the components that do not change color on any type of events or show any kind of animation effects with their font color.
+
+[ Please check the appropriate sass file for change such block or elements color styling!!! 😊 ]
+ ################### */
+
+@use "../abstracts/placeholders";
+
+// ###################
+// GENERAL FONTS
+// ###################
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey--2);
+}
+
+// ###################
+// HEADING FONTS
+// ###################
+
+.heading {
+  &-primary {
+    @extend %heading;
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+
+    &--number {
+      font-size: 8.6rem;
+      font-weight: 600;
+      color: var(--grey--7);
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &-secondary {
+    @extend %heading;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+  }
+
+  &-tertiary {
+    @extend %heading;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+
+  &-sub {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-primary-dark--1);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+  }
+
+  &-featured {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: var(--grey--5);
+  }
+}
+
+// ###################
+// TITLE FONTS
+// ###################
+
+.title {
+  &-primary {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--grey--1);
+    margin-bottom: 3.2rem;
+  }
+
+  &-secondary {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--grey--1);
+    margin-bottom: 1.6rem;
+  }
+
+  &-tertiary {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+
+  &-sub {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    color: var(--color-primary-dark--1);
+    margin-bottom: 3.2rem;
+  }
+}
+
+// ###################
+// PARAGRAPH FONTS
+// ###################
+
+.description {
+  &-primary {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+
+  &-secondary {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}
+
+// ###################
+// COMPONENTS - FONT STYLES
+// ###################
+
+// Navigation
+.nav__link {
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--grey--1);
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: var(--color-primary-dark--1);
+  }
+
+  &-cta {
+    &:link,
+    &:visited {
+      color: var(--color-white);
+    }
+  }
+}
+
+// Delivered-meals
+.delivered__text {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  span {
+    color: var(--color-primary-dark--1);
+    font-weight: 700;
+  }
+}
+
+// Buttons
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+  }
+}
+
+// Tags
+.tag {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--grey--1);
+  text-transform: uppercase;
+}
+
+// Meal-Card
+.meal-card__attribute {
+  font-size: 1.8rem;
+}
+
+// Diets List-item
+.diets__list-item {
+  font-size: 1.8rem;
+  line-height: var(--lh--3);
+}
+
+// Meals-Link
+.link--all-recipes {
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  &:hover,
+  &:active {
+    color: var(--color-primary-dark--1);
+  }
+}

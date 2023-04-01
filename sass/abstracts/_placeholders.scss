@@ -1,0 +1,13 @@
+@use "./variables";
+
+%heading {
+  font-weight: 700;
+  color: var(--grey--1);
+  letter-spacing: -0.5px;
+}
+
+%pad_all_inner_elements {
+  & > * {
+    padding: var(--pad-sides--tny);
+  }
+}
