@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as mix;
+
+.meal-card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  &__attributes {
+    @include mix.list(2.4rem);
+  }
+
+  &__attribute {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}

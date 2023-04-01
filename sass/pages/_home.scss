@@ -31,6 +31,8 @@ main > * {
 
   // ***************************************** Section Meals
   &-meals {
+    @include mix.container-small;
+    padding: var(--pad-top-btm-same--md);
   }
 
   // ***************************************** Section Testimonials

@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+
+.diets {
+  &__list {
+    @include mix.list(1.6rem);
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+  }
+}

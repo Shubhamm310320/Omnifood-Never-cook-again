@@ -7,11 +7,16 @@
 @use "./components/btn";
 @use "./components/delivered-meals";
 @use "./components/step";
+@use "./components/meal-card";
+@use "./components/diet-list";
+@use "./components/icon";
+@use "./components/link";
 
 @use "./layout/header";
 @use "./layout/footer";
 @use "./layout/navigation";
 @use "./layout/hero";
 @use "./layout/featured-in";
+@use "./layout/meals";
 
 @use "./pages/home";

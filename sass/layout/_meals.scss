@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as mix;
+
+.meals {
+  @include mix.grid-default;
+  @include mix.col-3;
+}
