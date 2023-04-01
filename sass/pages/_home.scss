@@ -2,6 +2,7 @@
 @use "../abstracts/placeholders";
 
 .header {
+  padding: var(--pad-sides--tny);
 }
 
 .main {

@@ -232,4 +232,28 @@ body {
   max-width: 100%;
 }
 
+.nav__list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+.nav__link:link, .nav__link:visited {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.nav__link-cta:link, .nav__link-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--border-radius--md);
+  background-color: var(--color-primary);
+}
+.nav__link-cta:hover, .nav__link-cta:active {
+  background-color: var(--color-primary-dark--1);
+}
+
+.header {
+  padding: var(--pad-sides--tny);
+}
+
 /*# sourceMappingURL=style.css.map */
