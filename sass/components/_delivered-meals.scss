@@ -1,0 +1,23 @@
+.delivered {
+  &__meals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+  }
+
+  &__imgs {
+    display: flex;
+  }
+
+  &__img {
+    max-height: 4.8rem;
+    max-width: 4.8rem;
+    border-radius: var(--border-radius--circle);
+    border: 3px solid var(--color-primary-light--3);
+
+    &:not(:last-child) {
+      margin-right: -1.6rem;
+    }
+  }
+}

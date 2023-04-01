@@ -30,10 +30,16 @@
 }
 
 // ***********************************      Grid definitions
-@mixin grid($col-gap, $row-gap) {
+@mixin grid-wide-column-gap {
   display: grid;
-  column-gap: $col-gap;
-  row-gap: $row-gap;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+@mixin grid-default {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
   align-items: center;
 }
 

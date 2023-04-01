@@ -13,9 +13,13 @@
 
 .section {
   // ***************************************** Section Hero
+
   &-hero {
-    .hero {
-    }
+    @include mix.container-full;
+    @extend %pad_all_inner_elements;
+
+    background-color: var(--color-primary-light--3);
+    padding: var(--pad-top-btm-diff--md);
   }
   // ***************************************** Section Featured-in
   &-featured-in {

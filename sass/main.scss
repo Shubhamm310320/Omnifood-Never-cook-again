@@ -1,11 +1,15 @@
-@use "./abstracts/variables";
+@forward "./abstracts/variables";
 
 @use "./base/base";
 @use "./base/typography";
 @use "./base/utilities";
 
+@use "./components/btn";
+@use "./components/delivered-meals";
+
 @use "./layout/header";
 @use "./layout/footer";
 @use "./layout/navigation";
+@use "./layout/hero";
 
 @use "./pages/home";

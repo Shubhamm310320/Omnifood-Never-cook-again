@@ -1,0 +1,20 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/placeholders";
+
+.hero {
+  @include mix.container-medium;
+  @include mix.grid-wide-column-gap;
+  @include mix.col-2;
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
