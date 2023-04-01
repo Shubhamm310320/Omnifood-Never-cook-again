@@ -43,6 +43,12 @@
   align-items: center;
 }
 
+@mixin simply-grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
 @mixin col-1 {
   grid-template-columns: 1fr;
 }

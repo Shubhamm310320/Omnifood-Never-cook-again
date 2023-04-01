@@ -5,10 +5,8 @@
   padding: var(--pad-sides--tny);
 }
 
-.main {
-  section {
-    @extend %pad_all_inner_elements;
-  }
+main > * {
+  @extend %pad_all_inner_elements;
 }
 
 .section {
@@ -27,6 +25,8 @@
 
   // ***************************************** Section How-it-works
   &-how {
+    @include mix.container-small;
+    padding: var(--pad-top-btm-same--md);
   }
 
   // ***************************************** Section Meals

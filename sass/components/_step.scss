@@ -1,0 +1,56 @@
+@use "../abstracts/mixins" as mix;
+
+.step {
+  @include mix.grid-default;
+  @include mix.col-2;
+
+  &:not(:last-of-type) {
+    margin-bottom: 9.6rem;
+  }
+
+  &__img-box {
+    @include mix.simply-grid;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      @include mix.absCenter;
+      display: block;
+      border-radius: var(--border-radius--circle);
+    }
+
+    &::before {
+      width: 45%;
+      padding-bottom: 45%;
+      background-color: var(--color-primary-light--3);
+      z-index: 2;
+    }
+
+    &::after {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: var(--color-primary-light--2);
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    max-width: 35%;
+    z-index: 3;
+  }
+
+  &--odd &__text-box {
+    order: 1;
+  }
+  &--odd &__img-box {
+    order: 2;
+  }
+
+  &--even &__text-box {
+    order: 2;
+  }
+  &--even &__img-box {
+    order: 1;
+  }
+}
