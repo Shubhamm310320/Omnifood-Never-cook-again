@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as mix;
+
+.testimonials {
+  @include mix.grid-small-column-gap;
+  @include mix.col-2;
+}

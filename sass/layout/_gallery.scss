@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as mix;
+
+.gallery {
+  display: grid;
+  gap: 1.6rem;
+  @include mix.col-3;
+  padding: var(--pad-all--tny);
+
+  &__img-box {
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.13);
+    }
+  }
+}

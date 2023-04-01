@@ -5,7 +5,7 @@
   padding: var(--pad-sides--tny);
 }
 
-main > * {
+section {
   @extend %pad_all_inner_elements;
 }
 
@@ -37,6 +37,14 @@ main > * {
 
   // ***************************************** Section Testimonials
   &-testimonials {
+    @include mix.simply-grid;
+    grid-template-columns: 55fr 45fr;
+    background-color: var(--color-primary-light--3);
+    padding: 0;
+
+    .testimonials__container {
+      padding: var(--pad-all--md);
+    }
   }
 
   // ***************************************** Section Pricing

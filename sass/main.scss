@@ -11,6 +11,7 @@
 @use "./components/diet-list";
 @use "./components/icon";
 @use "./components/link";
+@use "./components/testimonial";
 
 @use "./layout/header";
 @use "./layout/footer";
@@ -18,5 +19,7 @@
 @use "./layout/hero";
 @use "./layout/featured-in";
 @use "./layout/meals";
+@use "./layout/testimonials";
+@use "./layout/gallery";
 
 @use "./pages/home";
