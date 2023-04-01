@@ -13,16 +13,16 @@
 
 .section {
   // ***************************************** Section Hero
-
   &-hero {
     @include mix.container-full;
-    @extend %pad_all_inner_elements;
-
-    background-color: var(--color-primary-light--3);
     padding: var(--pad-top-btm-diff--md);
+    background-color: var(--color-primary-light--3);
   }
+
   // ***************************************** Section Featured-in
   &-featured-in {
+    @include mix.container-small;
+    padding: var(--pad-top-btm-diff--tny);
   }
 
   // ***************************************** Section How-it-works

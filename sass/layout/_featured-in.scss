@@ -1,0 +1,15 @@
+.featured-in {
+  max-width: 100%;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  gap: 1.8rem;
+  grid-template-columns: repeat(5, 1fr);
+
+  &__logo {
+    filter: brightness(0);
+    opacity: 50%;
+    max-height: 3.2rem;
+    max-width: 100%;
+  }
+}
