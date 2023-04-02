@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+
+.pricing {
+  &__plans {
+    @include mix.grid-default;
+    @include mix.col-2;
+  }
+
+  &__features {
+    @include mix.grid-default;
+    @include mix.col-4;
+  }
+}

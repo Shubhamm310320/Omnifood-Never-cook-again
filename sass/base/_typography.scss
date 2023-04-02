@@ -180,11 +180,6 @@ body {
   text-transform: uppercase;
 }
 
-.author-name {
-  font-size: 1.6rem;
-  color: var(--grey--3);
-}
-
 // Meal-Card
 .meal-card__attribute {
   font-size: 1.8rem;
@@ -208,4 +203,54 @@ body {
   &:active {
     color: var(--color-primary-dark--1);
   }
+}
+
+// Author name
+.author-name {
+  font-size: 1.6rem;
+  color: var(--grey--3);
+}
+
+// Price
+.price {
+  &--lg {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: var(--grey--1);
+    margin-bottom: 1.6rem;
+
+    span {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+// Plan
+.plan {
+  &__detail {
+    font-size: 1.6rem;
+    line-height: var(--lh--4);
+    color: var(--grey--3);
+  }
+
+  &__attribute {
+    font-size: 1.8rem;
+    line-height: var(--lh--3);
+  }
+
+  &--complete {
+    &::after {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--grey--1);
+      text-transform: uppercase;
+    }
+  }
+}
+// Pricing
+.pricing__details {
+  font-size: 1.6rem;
+  line-height: var(--lh--4);
 }

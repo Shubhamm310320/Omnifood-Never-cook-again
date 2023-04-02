@@ -49,6 +49,8 @@ section {
 
   // ***************************************** Section Pricing
   &-pricing {
+    @include mix.container-small;
+    padding: var(--pad-top-btm-same--md);
   }
   // ***************************************** Section CTA
   &-cta {

@@ -12,6 +12,7 @@
 @use "./components/icon";
 @use "./components/link";
 @use "./components/testimonial";
+@use "./components/plan";
 
 @use "./layout/header";
 @use "./layout/footer";
@@ -21,5 +22,6 @@
 @use "./layout/meals";
 @use "./layout/testimonials";
 @use "./layout/gallery";
+@use "./layout/pricing";
 
 @use "./pages/home";
