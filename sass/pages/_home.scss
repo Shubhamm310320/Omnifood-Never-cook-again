@@ -54,6 +54,8 @@ section {
   }
   // ***************************************** Section CTA
   &-cta {
+    @include mix.container-small;
+    padding: var(--pad-top-btm-diff--lg);
   }
 }
 

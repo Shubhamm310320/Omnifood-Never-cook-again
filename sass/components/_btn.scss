@@ -6,6 +6,10 @@
     padding: 1.6rem 3.2rem;
     border-radius: var(--border-radius--md);
     transition: all 0.3s;
+
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
   }
 
   &--full {
@@ -32,6 +36,18 @@
     &:active {
       background-color: var(--color-primary-light--3);
       box-shadow: inset 0 0 0 3px var(--color-white); // Trick to add border inside
+    }
+  }
+
+  &--form {
+    background-color: var(--color-primary-dark--2);
+    color: var(--color-primary-light--3);
+    padding: 1.2rem;
+    align-self: end;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--grey--2);
     }
   }
 }

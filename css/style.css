@@ -280,11 +280,18 @@ body {
   text-align: center !important;
 }
 
+.color-darken {
+  color: var(--color-primary-dark--2) !important;
+}
+
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: var(--border-radius--md);
   transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
 .btn--full:link, .btn--full:visited {
   background-color: var(--color-primary);
@@ -300,6 +307,16 @@ body {
 .btn--outline:hover, .btn--outline:active {
   background-color: var(--color-primary-light--3);
   box-shadow: inset 0 0 0 3px var(--color-white);
+}
+.btn--form {
+  background-color: var(--color-primary-dark--2);
+  color: var(--color-primary-light--3);
+  padding: 1.2rem;
+  align-self: end;
+}
+.btn--form:hover {
+  background-color: var(--color-white);
+  color: var(--grey--2);
 }
 
 .delivered__meals {
@@ -491,6 +508,29 @@ body {
   gap: 1.6rem;
 }
 
+.form__group {
+  display: grid;
+  gap: 1.2rem;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary-dark--2);
+}
+
+select,
+input {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--color-primary-light--3);
+  border-radius: var(--border-radius--md);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -605,6 +645,29 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--color-primary-light--1);
+  border-radius: var(--border-radius--md);
+  padding: 0;
+  overflow: hidden;
+}
+.cta__text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta__img-box {
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
 .header {
   padding: var(--pad-sides--tny);
 }
@@ -644,6 +707,11 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: var(--pad-top-btm-same--md);
+}
+.section-cta {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--pad-top-btm-diff--lg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@
 @use "./components/link";
 @use "./components/testimonial";
 @use "./components/plan";
+@use "./components/form";
 
 @use "./layout/header";
 @use "./layout/footer";
@@ -23,5 +24,6 @@
 @use "./layout/testimonials";
 @use "./layout/gallery";
 @use "./layout/pricing";
+@use "./layout/cta";
 
 @use "./pages/home";
