@@ -1,0 +1,52 @@
+@use "../abstracts/mixins" as mix;
+
+.footer {
+  @include mix.grid-default;
+  @include mix.col-5;
+  align-items: start;
+  justify-items: center;
+
+  &__logo {
+    height: 2.2rem;
+  }
+
+  &__social-box {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    @include mix.list(2.4rem);
+  }
+}
+
+[class^="col"] {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: auto;
+}
+
+.col {
+  &-logo {
+  }
+  &-contacts {
+  }
+  &-account {
+  }
+  &-company {
+  }
+  &-resources {
+  }
+}

@@ -254,3 +254,31 @@ body {
   font-size: 1.6rem;
   line-height: var(--lh--4);
 }
+
+// Adress
+.address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+// Contact
+.contact__link:not(:last-child) {
+  margin-bottom: auto;
+}
+
+.contact__link,
+.footer__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--grey--4);
+}
+
+// copyright
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}

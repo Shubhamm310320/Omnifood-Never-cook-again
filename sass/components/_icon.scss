@@ -20,4 +20,15 @@
     border-radius: var(--border-radius--circle);
     box-sizing: content-box;
   }
+
+  &-social {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: var(--grey--4);
+    transition: all 0.4s;
+
+    &:hover {
+      fill: var(--grey--1);
+    }
+  }
 }

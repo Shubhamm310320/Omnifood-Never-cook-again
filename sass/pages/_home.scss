@@ -5,7 +5,8 @@
   padding: var(--pad-sides--tny);
 }
 
-section {
+section,
+footer {
   @extend %pad_all_inner_elements;
 }
 
@@ -56,8 +57,12 @@ section {
   &-cta {
     @include mix.container-small;
     padding: var(--pad-top-btm-diff--lg);
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 }
 
-.footer {
+footer {
+  @include mix.container-medium;
+  padding: var(--pad-top-btm-same--lg);
 }

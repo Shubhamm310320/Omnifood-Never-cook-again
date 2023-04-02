@@ -68,7 +68,8 @@ body {
   letter-spacing: -0.5px;
 }
 
-section > * {
+section > *,
+footer > * {
   padding: var(--pad-sides--tny);
 }
 
@@ -250,6 +251,31 @@ body {
 .pricing__details {
   font-size: 1.6rem;
   line-height: var(--lh--4);
+}
+
+.address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.contact__link:not(:last-child) {
+  margin-bottom: auto;
+}
+
+.contact__link,
+.footer__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--grey--4);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
 }
 
 .mgb-vtny {
@@ -455,6 +481,15 @@ body {
   border-radius: var(--border-radius--circle);
   box-sizing: content-box;
 }
+.icon-social {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: var(--grey--4);
+  transition: all 0.4s;
+}
+.icon-social:hover {
+  fill: var(--grey--1);
+}
 
 .link--all-recipes:link, .link--all-recipes:visited {
   display: inline-block;
@@ -465,6 +500,11 @@ body {
 .link--all-recipes:hover, .link--all-recipes:active {
   transform: translateY(-1px);
   border-bottom: 1px solid transparent;
+}
+
+.contact__link {
+  display: block;
+  transition: all 0.3s;
 }
 
 .testimonial__img {
@@ -541,6 +581,46 @@ input {
 .header__logo {
   max-height: 2.2rem;
   max-width: 100%;
+}
+
+.footer {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+  justify-items: center;
+}
+.footer__logo {
+  height: 2.2rem;
+}
+.footer__social-box {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.footer__social-box li {
+  cursor: pointer;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+[class^=col] {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: auto;
 }
 
 .nav__list {
@@ -712,6 +792,14 @@ input {
   max-width: 120rem;
   margin: 0 auto;
   padding: var(--pad-top-btm-diff--lg);
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+footer {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: var(--pad-top-btm-same--lg);
 }
 
 /*# sourceMappingURL=style.css.map */
