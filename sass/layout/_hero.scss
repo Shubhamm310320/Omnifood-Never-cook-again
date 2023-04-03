@@ -2,9 +2,8 @@
 @use "../abstracts/placeholders";
 
 .hero {
-  @include mix.container-medium;
-  @include mix.grid-wide-column-gap;
-  @include mix.col-2;
+  @include mix.grid(9.6rem, 6.4rem, center, center);
+  grid-template-columns: repeat(2, 1fr);
 
   &__cta {
     display: flex;

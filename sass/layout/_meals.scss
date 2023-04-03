@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as mix;
 
 .meals {
-  @include mix.grid-default;
-  @include mix.col-3;
+  @include mix.grid(6.4rem, 9.6rem, center, center);
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
 }

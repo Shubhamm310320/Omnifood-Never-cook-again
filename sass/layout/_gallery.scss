@@ -1,9 +1,9 @@
 @use "../abstracts/mixins" as mix;
 
 .gallery {
-  display: grid;
-  gap: 1.6rem;
-  @include mix.col-3;
+  @include mix.grid(1.2rem, 1.2rem, stretch, stretch);
+  grid-template-columns: repeat(3, 1fr);
+
   padding: var(--pad-all--tny);
 
   &__img-box {

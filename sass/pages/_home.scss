@@ -16,6 +16,10 @@ footer {
     @include mix.container-full;
     padding: var(--pad-top-btm-diff--md);
     background-color: var(--color-primary-light--3);
+
+    .hero {
+      @include mix.container-medium;
+    }
   }
 
   // ***************************************** Section Featured-in
@@ -38,7 +42,7 @@ footer {
 
   // ***************************************** Section Testimonials
   &-testimonials {
-    @include mix.simply-grid;
+    @include mix.grid(0, 0, center, center);
     grid-template-columns: 55fr 45fr;
     background-color: var(--color-primary-light--3);
     padding: 0;

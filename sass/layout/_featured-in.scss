@@ -1,9 +1,8 @@
+@use "../abstracts/mixins" as mix;
+
 .featured-in {
   max-width: 100%;
-  display: grid;
-  align-items: start;
-  justify-items: center;
-  gap: 1.8rem;
+  @include mix.grid(1.8rem, 1.8rem, start, center);
   grid-template-columns: repeat(5, 1fr);
 
   &__logo {

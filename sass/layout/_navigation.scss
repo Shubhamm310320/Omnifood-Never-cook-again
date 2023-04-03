@@ -1,10 +1,29 @@
+@use "../abstracts/mixins" as mix;
+
 .nav {
+  transition: all 0.4s;
+
+  @media (max-width: 75em) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 1500;
+  }
+
   &__list {
     list-style: none;
     text-decoration: none;
     display: flex;
     gap: 4.8rem;
     align-items: center;
+
+    @media (max-width: 75em) {
+      flex-direction: column;
+      @include mix.absCenter;
+    }
   }
 
   &__link {

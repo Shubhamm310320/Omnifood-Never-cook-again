@@ -2,12 +2,12 @@
 
 .pricing {
   &__plans {
-    @include mix.grid-default;
-    @include mix.col-2;
+    @include mix.grid(6.4rem, 9.6rem, center, center);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &__features {
-    @include mix.grid-default;
-    @include mix.col-4;
+    @include mix.grid(6.4rem, 9.6rem, center, center);
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,15 +1,15 @@
 @use "../abstracts/mixins" as mix;
 
 .step {
-  @include mix.grid-default;
-  @include mix.col-2;
+  @include mix.grid(6.4rem, 9.6rem, center, center);
+  grid-template-columns: repeat(2, 1fr);
 
   &:not(:last-of-type) {
     margin-bottom: 9.6rem;
   }
 
   &__img-box {
-    @include mix.simply-grid;
+    @include mix.grid(0, 0, center, center);
     position: relative;
 
     &::after,

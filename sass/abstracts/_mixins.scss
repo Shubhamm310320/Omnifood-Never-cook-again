@@ -30,43 +30,10 @@
 }
 
 // ***********************************      Grid definitions
-@mixin grid-wide-column-gap {
+@mixin grid($col-gap, $row-gap, $align, $justify) {
   display: grid;
-  gap: 9.6rem;
-  align-items: center;
-}
-@mixin grid-small-column-gap {
-  display: grid;
-  row-gap: 4.8rem;
-  column-gap: 8rem;
-  align-items: center;
-}
-
-@mixin grid-default {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  align-items: center;
-}
-
-@mixin simply-grid {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-@mixin col-1 {
-  grid-template-columns: 1fr;
-}
-@mixin col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-@mixin col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-@mixin col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-@mixin col-5 {
-  grid-template-columns: repeat(5, 1fr);
+  column-gap: $col-gap;
+  row-gap: $row-gap;
+  align-items: $align;
+  justify-items: $justify;
 }

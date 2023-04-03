@@ -1,10 +1,8 @@
 @use "../abstracts/mixins" as mix;
 
 .footer {
-  @include mix.grid-default;
-  @include mix.col-5;
-  align-items: start;
-  justify-items: center;
+  @include mix.grid(6.4rem, 9.6rem, start, center);
+  grid-template-columns: repeat(5, 1fr);
 
   &__logo {
     height: 2.2rem;
@@ -36,17 +34,4 @@
   flex-direction: column;
   gap: 1.2rem;
   margin-top: auto;
-}
-
-.col {
-  &-logo {
-  }
-  &-contacts {
-  }
-  &-account {
-  }
-  &-company {
-  }
-  &-resources {
-  }
 }

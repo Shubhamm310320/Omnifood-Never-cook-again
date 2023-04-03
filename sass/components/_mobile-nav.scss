@@ -1,0 +1,97 @@
+@use "../abstracts/mixins" as mix;
+
+.mobile-nav {
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .nav {
+      transform: translateX(0);
+    }
+    &:checked ~ .mobile-nav__background {
+      transform: scale(80);
+    }
+
+    &:checked ~ .mobile-nav__label .mobile-nav__btn {
+      background-color: transparent;
+    }
+    &:checked ~ .mobile-nav__label .mobile-nav__btn::after {
+      transform: rotate(135deg);
+      top: 0;
+    }
+    &:checked ~ .mobile-nav__label .mobile-nav__btn::before {
+      transform: rotate(-135deg);
+      top: 0;
+    }
+  }
+
+  &__label {
+    background-color: var(--grey--1);
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2000;
+
+    display: none;
+
+    @media (max-width: 75em) {
+      display: inline-block;
+    }
+
+    &:hover .mobile-nav__btn::after {
+      top: 1rem;
+    }
+    &:hover .mobile-nav__btn::before {
+      top: -1rem;
+    }
+  }
+
+  &__background {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    background-image: radial-gradient(#fae5d3, #fdf2e9);
+    position: fixed;
+    top: 1.5rem;
+    right: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.6s;
+    z-index: 1000;
+
+    @media (max-width: 75em) {
+      display: inline-block;
+    }
+  }
+
+  &__btn {
+    @include mix.absCenter;
+
+    &,
+    &::after,
+    &::before {
+      background-color: var(--color-primary-light--2);
+      width: 3.5rem;
+      height: 0.2rem;
+      border-radius: 10rem;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+}

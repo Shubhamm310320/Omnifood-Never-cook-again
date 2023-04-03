@@ -1,8 +1,9 @@
 @use "../abstracts/mixins" as mix;
 
 .cta {
-  display: grid;
+  @include mix.grid(0, 0, stretch, stretch);
   grid-template-columns: 2fr 1fr;
+
   background-color: var(--color-primary-light--1);
   border-radius: var(--border-radius--md);
   padding: 0;
@@ -24,9 +25,7 @@
   }
 
   &__form {
-    display: grid;
-    @include mix.col-2;
-    column-gap: 3.2rem;
-    row-gap: 2.4rem;
+    @include mix.grid(3.2rem, 2.4rem, stretch, stretch);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
