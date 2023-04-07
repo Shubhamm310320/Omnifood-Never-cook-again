@@ -1,9 +1,21 @@
+@use "../abstracts/mixins" as mix;
+
 .delivered {
   &__meals {
     display: flex;
     align-items: center;
     gap: 1.6rem;
     margin-top: 8rem;
+
+    @include mix.respond(screen-950) {
+      margin-top: 3rem;
+      justify-content: center;
+    }
+
+    @include mix.respond(screen-750) {
+      margin-top: -3rem;
+      flex-direction: column;
+    }
   }
 
   &__imgs {

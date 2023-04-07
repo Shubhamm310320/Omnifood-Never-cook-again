@@ -47,8 +47,16 @@ footer {
     background-color: var(--color-primary-light--3);
     padding: 0;
 
+    @include mix.respond(screen-1550) {
+      grid-template-columns: 1fr;
+    }
+
     .testimonials__container {
       padding: var(--pad-all--md);
+
+      @include mix.respond(screen-750) {
+        padding: 5.2rem;
+      }
     }
   }
 

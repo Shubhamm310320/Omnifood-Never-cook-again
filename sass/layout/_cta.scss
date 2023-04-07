@@ -4,6 +4,10 @@
   @include mix.grid(0, 0, stretch, stretch);
   grid-template-columns: 2fr 1fr;
 
+  @include mix.respond(screen-950) {
+    grid-template-columns: 1fr;
+  }
+
   background-color: var(--color-primary-light--1);
   border-radius: var(--border-radius--md);
   padding: 0;
@@ -22,10 +26,18 @@
       url(../../img/eating.jpg);
     background-size: cover;
     background-position: center;
+
+    @include mix.respond(screen-950) {
+      display: none;
+    }
   }
 
   &__form {
     @include mix.grid(3.2rem, 2.4rem, stretch, stretch);
     grid-template-columns: repeat(2, 1fr);
+
+    @include mix.respond(screen-750) {
+      grid-template-columns: 1fr;
+    }
   }
 }

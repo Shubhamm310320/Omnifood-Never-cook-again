@@ -4,6 +4,16 @@
   @include mix.grid(1.2rem, 1.2rem, stretch, stretch);
   grid-template-columns: repeat(3, 1fr);
 
+  @include mix.respond(screen-1550) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @include mix.respond(screen-950) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include mix.respond(screen-500) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   padding: var(--pad-all--tny);
 
   &__img-box {

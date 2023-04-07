@@ -1,6 +1,10 @@
 @use "../abstracts/mixins" as mix;
 
 .testimonials {
-  @include mix.grid(8rem, 4.8rem, center, center);
+  @include mix.grid(8rem, 4.8rem, stretch, center);
   grid-template-columns: repeat(2, 1fr);
+
+  @include mix.respond(screen-950) {
+    grid-template-columns: 1fr;
+  }
 }

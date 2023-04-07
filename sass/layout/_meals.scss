@@ -2,5 +2,17 @@
 
 .meals {
   @include mix.grid(6.4rem, 9.6rem, center, center);
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+
+  @include mix.respond(screen-1100) {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__footer {
+      padding: 3.2rem;
+    }
+  }
+
+  @include mix.respond(screen-950) {
+    grid-template-columns: 1fr;
+  }
 }

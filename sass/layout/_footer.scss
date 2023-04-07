@@ -4,6 +4,39 @@
   @include mix.grid(6.4rem, 9.6rem, start, center);
   grid-template-columns: repeat(5, 1fr);
 
+  @include mix.respond(screen-950) {
+    @include mix.grid(2.4rem, 9.6rem, center, center);
+    grid-template-columns: repeat(6, 1fr);
+
+    .col {
+      &-logo {
+        grid-column: 1 / span 3;
+        text-align: center;
+      }
+      &-contact {
+        grid-column: 4 / span 3;
+        text-align: center;
+      }
+
+      &-Account {
+        grid-column: 1 / span 2;
+        text-align: center;
+      }
+      &-Company {
+        grid-column: 3 / span 2;
+        text-align: center;
+      }
+      &-Resources {
+        grid-column: 5 / span 2;
+        text-align: center;
+      }
+    }
+
+    &__social-box {
+      justify-content: center;
+    }
+  }
+
   &__logo {
     height: 2.2rem;
   }

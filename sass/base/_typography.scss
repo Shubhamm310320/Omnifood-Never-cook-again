@@ -5,6 +5,7 @@ NOTE: The typography styling section includes all of the typography/font definit
  ################### */
 
 @use "../abstracts/placeholders";
+@use "../abstracts/mixins" as mix;
 
 // ###################
 // GENERAL FONTS
@@ -28,11 +29,22 @@ body {
     line-height: 1.05;
     margin-bottom: 3.2rem;
 
+    @include mix.respond(screen-950) {
+      font-size: 4rem;
+    }
+    @include mix.respond(screen-750) {
+      font-size: 3.6rem;
+    }
+
     &--number {
       font-size: 8.6rem;
       font-weight: 600;
       color: var(--grey--7);
       margin-bottom: 1.2rem;
+
+      @include mix.respond(screen-750) {
+        font-size: 6.4rem;
+      }
     }
   }
 
@@ -41,6 +53,15 @@ body {
     font-size: 4.4rem;
     line-height: 1.2;
     margin-bottom: 9.6rem;
+
+    @include mix.respond(screen-950) {
+      font-size: 3.8rem;
+      margin-bottom: 6.4rem;
+    }
+
+    @include mix.respond(screen-750) {
+      font-size: 2.8rem;
+    }
   }
 
   &-tertiary {
@@ -48,6 +69,15 @@ body {
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 3.2rem;
+
+    @include mix.respond(screen-950) {
+      font-size: 2.6rem;
+      margin-bottom: 2.8rem;
+    }
+
+    @include mix.respond(screen-750) {
+      font-size: 2.2rem;
+    }
   }
 
   &-sub {
@@ -136,7 +166,7 @@ body {
     color: var(--grey--1);
     text-decoration: none;
 
-    @media (max-width: 75em) {
+    @include mix.respond(screen-950) {
       font-size: 3.2rem;
       font-weight: 400;
     }
