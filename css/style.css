@@ -262,6 +262,11 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 46.875em) {
+  .delivered__text {
+    font-size: 2rem;
+  }
+}
 .delivered__text span {
   color: var(--color-primary-dark--1);
   font-weight: 700;
@@ -273,6 +278,11 @@ body {
   font-family: inherit;
   text-decoration: none;
 }
+@media only screen and (max-width: 46.875em) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 2.4rem;
+  }
+}
 
 .tag {
   font-size: 1.2rem;
@@ -280,20 +290,40 @@ body {
   color: var(--grey--1);
   text-transform: uppercase;
 }
+@media only screen and (max-width: 46.875em) {
+  .tag {
+    font-size: 1.4rem;
+  }
+}
 
 .meal-card__attribute {
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 46.875em) {
+  .meal-card__attribute {
+    font-size: 2rem;
+  }
 }
 
 .diets__list-item {
   font-size: 1.8rem;
   line-height: var(--lh--3);
 }
+@media only screen and (max-width: 46.875em) {
+  .diets__list-item {
+    font-size: 2.2rem;
+  }
+}
 
 .link--all-recipes:link, .link--all-recipes:visited {
   font-size: 1.8rem;
   text-decoration: none;
   color: var(--color-primary);
+}
+@media only screen and (max-width: 46.875em) {
+  .link--all-recipes:link, .link--all-recipes:visited {
+    font-size: 2rem;
+  }
 }
 .link--all-recipes:hover, .link--all-recipes:active {
   color: var(--color-primary-dark--1);
@@ -302,6 +332,11 @@ body {
 .author-name {
   font-size: 1.6rem;
   color: var(--grey--3);
+}
+@media only screen and (max-width: 46.875em) {
+  .author-name {
+    font-size: 1.8rem;
+  }
 }
 
 .price--lg {
@@ -321,9 +356,19 @@ body {
   line-height: var(--lh--4);
   color: var(--grey--3);
 }
+@media only screen and (max-width: 46.875em) {
+  .plan__detail {
+    font-size: 1.8rem;
+  }
+}
 .plan__attribute {
   font-size: 1.8rem;
   line-height: var(--lh--3);
+}
+@media only screen and (max-width: 46.875em) {
+  .plan__attribute {
+    font-size: 2rem;
+  }
 }
 .plan--complete::after {
   font-size: 1.4rem;
@@ -331,10 +376,20 @@ body {
   color: var(--grey--1);
   text-transform: uppercase;
 }
+@media only screen and (max-width: 46.875em) {
+  .plan--complete::after {
+    font-size: 1.6rem;
+  }
+}
 
 .pricing__details {
   font-size: 1.6rem;
   line-height: var(--lh--4);
+}
+@media only screen and (max-width: 46.875em) {
+  .pricing__details {
+    font-size: 1.8rem;
+  }
 }
 
 .address {
@@ -342,6 +397,11 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 46.875em) {
+  .address {
+    font-size: 1.8rem;
+  }
 }
 
 .contact__link:not(:last-child) {
@@ -354,6 +414,12 @@ body {
   font-size: 1.6rem;
   color: var(--grey--4);
 }
+@media only screen and (max-width: 46.875em) {
+  .contact__link,
+  .footer__link {
+    font-size: 1.8rem;
+  }
+}
 
 .copyright {
   font-size: 1.4rem;
@@ -361,11 +427,21 @@ body {
   color: #767676;
   margin-top: auto;
 }
+@media only screen and (max-width: 46.875em) {
+  .copyright {
+    font-size: 1.6rem;
+  }
+}
 
 label {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--color-primary-dark--2);
+}
+@media only screen and (max-width: 46.875em) {
+  label {
+    font-size: 1.8rem;
+  }
 }
 
 input,

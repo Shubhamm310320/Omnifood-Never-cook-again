@@ -198,6 +198,10 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
 
+  @include mix.respond(screen-750) {
+    font-size: 2rem;
+  }
+
   span {
     color: var(--color-primary-dark--1);
     font-weight: 700;
@@ -213,6 +217,10 @@ body {
     font-weight: 600;
     font-family: inherit;
     text-decoration: none;
+
+    @include mix.respond(screen-750) {
+      font-size: 2.4rem;
+    }
   }
 }
 
@@ -222,17 +230,29 @@ body {
   font-weight: 600;
   color: var(--grey--1);
   text-transform: uppercase;
+
+  @include mix.respond(screen-750) {
+    font-size: 1.4rem;
+  }
 }
 
 // Meal-Card
 .meal-card__attribute {
   font-size: 1.8rem;
+
+  @include mix.respond(screen-750) {
+    font-size: 2rem;
+  }
 }
 
 // Diets List-item
 .diets__list-item {
   font-size: 1.8rem;
   line-height: var(--lh--3);
+
+  @include mix.respond(screen-750) {
+    font-size: 2.2rem;
+  }
 }
 
 // Meals-Link
@@ -242,6 +262,10 @@ body {
     font-size: 1.8rem;
     text-decoration: none;
     color: var(--color-primary);
+
+    @include mix.respond(screen-750) {
+      font-size: 2rem;
+    }
   }
   &:hover,
   &:active {
@@ -253,6 +277,10 @@ body {
 .author-name {
   font-size: 1.6rem;
   color: var(--grey--3);
+
+  @include mix.respond(screen-750) {
+    font-size: 1.8rem;
+  }
 }
 
 // Price
@@ -277,11 +305,19 @@ body {
     font-size: 1.6rem;
     line-height: var(--lh--4);
     color: var(--grey--3);
+
+    @include mix.respond(screen-750) {
+      font-size: 1.8rem;
+    }
   }
 
   &__attribute {
     font-size: 1.8rem;
     line-height: var(--lh--3);
+
+    @include mix.respond(screen-750) {
+      font-size: 2rem;
+    }
   }
 
   &--complete {
@@ -290,6 +326,10 @@ body {
       font-weight: 700;
       color: var(--grey--1);
       text-transform: uppercase;
+
+      @include mix.respond(screen-750) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -297,6 +337,10 @@ body {
 .pricing__details {
   font-size: 1.6rem;
   line-height: var(--lh--4);
+
+  @include mix.respond(screen-750) {
+    font-size: 1.8rem;
+  }
 }
 
 // Adress
@@ -305,6 +349,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 2.4rem;
+
+  @include mix.respond(screen-750) {
+    font-size: 1.8rem;
+  }
 }
 
 // Contact
@@ -317,6 +365,10 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   color: var(--grey--4);
+
+  @include mix.respond(screen-750) {
+    font-size: 1.8rem;
+  }
 }
 
 // copyright
@@ -325,12 +377,20 @@ body {
   line-height: 1.6;
   color: #767676;
   margin-top: auto;
+
+  @include mix.respond(screen-750) {
+    font-size: 1.6rem;
+  }
 }
 
 label {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--color-primary-dark--2);
+
+  @include mix.respond(screen-750) {
+    font-size: 1.8rem;
+  }
 }
 
 input,
