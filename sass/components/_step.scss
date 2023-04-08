@@ -31,8 +31,8 @@
       z-index: 2;
 
       @include mix.respond(screen-950) {
-        width: 50%;
-        padding-bottom: 50%;
+        width: 70%;
+        padding-bottom: 70%;
       }
     }
 
@@ -43,8 +43,8 @@
       z-index: 1;
 
       @include mix.respond(screen-950) {
-        width: 65%;
-        padding-bottom: 65%;
+        width: 85%;
+        padding-bottom: 85%;
       }
     }
   }

@@ -504,8 +504,8 @@ select {
 }
 @media only screen and (max-width: 59.4em) {
   .step__img-box::before {
-    width: 50%;
-    padding-bottom: 50%;
+    width: 70%;
+    padding-bottom: 70%;
   }
 }
 .step__img-box::after {
@@ -516,8 +516,8 @@ select {
 }
 @media only screen and (max-width: 59.4em) {
   .step__img-box::after {
-    width: 65%;
-    padding-bottom: 65%;
+    width: 85%;
+    padding-bottom: 85%;
   }
 }
 .step__img {
