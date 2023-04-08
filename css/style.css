@@ -224,9 +224,19 @@ body {
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
+@media only screen and (max-width: 46.875em) {
+  .description-primary {
+    font-size: 2.2rem;
+  }
+}
 .description-secondary {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+@media only screen and (max-width: 46.875em) {
+  .description-secondary {
+    font-size: 2rem;
+  }
 }
 
 .nav__link:link, .nav__link:visited {
