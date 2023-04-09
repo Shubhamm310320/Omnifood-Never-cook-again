@@ -19,6 +19,13 @@
     <!-- My Own Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="./script.js"></script>
+
     <title>Omnifood &dash; Never cook again!</title>
   </head>
   <body>
@@ -41,19 +48,19 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="#" class="nav__link">How it works</a>
+            <a href="#how" class="nav__link">How it works</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Meals</a>
+            <a href="#meals" class="nav__link">Meals</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Testimonials</a>
+            <a href="#testimonials" class="nav__link">Testimonials</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Pricing</a>
+            <a href="#pricing" class="nav__link">Pricing</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link nav__link-cta">Try for free</a>
+            <a href="#cta" class="nav__link nav__link-cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +72,7 @@
       <!-- ###################
         Section-hero 
       #################### -->
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero">
           <div class="hero__text-box">
             <h1 class="heading-primary">
@@ -77,8 +84,8 @@
               nutritional needs.
             </p>
             <div class="hero__cta mgb-lrg">
-              <a href="#" class="btn btn--full">Start eating well</a>
-              <a href="#" class="btn btn--outline">Learn more &darr;</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
+              <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             </div>
             <div class="delivered__meals">
               <div class="delivered__imgs">
@@ -132,7 +139,7 @@
        section-featured-in 
       #################### -->
 
-      <section class="section-featured-in">
+      <section class="section-featured-in" id="featured-in">
         <h3 class="heading-featured">As featured in</h3>
         <div class="featured-in">
           <img
@@ -167,7 +174,7 @@
        section-how 
       #################### -->
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <!-- How it works ~ Header -->
         <header class="how__header">
           <h2 class="heading-sub">How it works</h2>
@@ -247,7 +254,7 @@
        section-meals 
       #################### -->
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <header class="meals__header text-center">
           <h2 class="heading-sub">Meals</h2>
           <h3 class="heading-secondary">
@@ -400,7 +407,7 @@
        section-testimonials 
       #################### -->
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <!-- Testimonials -->
         <div class="testimonials__container">
           <header class="testimonials__header">
@@ -570,7 +577,7 @@
        section-pricing 
       #################### -->
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <header class="pricing__header">
           <h2 class="heading-sub">Pricing</h2>
           <h3 class="heading-secondary">
@@ -717,7 +724,7 @@
        section-cta 
       #################### -->
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="cta">
           <div class="cta__text-box">
             <header class="cta__text">
