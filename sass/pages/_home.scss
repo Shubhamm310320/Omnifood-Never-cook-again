@@ -6,7 +6,7 @@
 }
 
 section,
-footer {
+footer:has(.footer) {
   @extend %pad_all_inner_elements;
 }
 
