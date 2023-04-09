@@ -3,6 +3,7 @@
 const checkbox = document.getElementById("check-hack");
 const navbar = document.querySelector(".nav");
 
+// SMOOTH SCROLLING
 navbar.addEventListener("click", function (e) {
   if (!e.target.classList.contains("nav__link")) return;
   e.preventDefault();
@@ -23,3 +24,23 @@ navbar.addEventListener("click", function (e) {
     sectionEl.scrollIntoView({ behavior: "smooth" });
   }
 });
+
+// STICKY NAVIGATION
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    !ent.isIntersecting
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+observer.observe(sectionHeroEl);
