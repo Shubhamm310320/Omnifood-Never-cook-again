@@ -18,7 +18,7 @@ navbar.addEventListener("click", function (e) {
     });
   }
 
-  if (href !== "#") {
+  if (href !== "#" && href.startsWith("#")) {
     const sectionEl = document.querySelector(href);
     sectionEl.scrollIntoView({ behavior: "smooth" });
   }
