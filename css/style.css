@@ -148,7 +148,7 @@ body {
 }
 
 section > *,
-footer:has(.footer) > * {
+.main-footer > * {
   padding: var(--pad-sides--tny);
 }
 
