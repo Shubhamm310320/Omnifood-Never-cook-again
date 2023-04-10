@@ -31,8 +31,12 @@
       z-index: 2;
 
       @include mix.respond(screen-950) {
-        width: 70%;
-        padding-bottom: 70%;
+        width: 50%;
+        padding-bottom: 50%;
+      }
+      @include mix.respond(screen-500) {
+        width: 47%;
+        padding-bottom: 47%;
       }
     }
 
@@ -43,8 +47,12 @@
       z-index: 1;
 
       @include mix.respond(screen-950) {
-        width: 85%;
-        padding-bottom: 85%;
+        width: 65%;
+        padding-bottom: 65%;
+      }
+      @include mix.respond(screen-500) {
+        width: 55%;
+        padding-bottom: 55%;
       }
     }
   }
@@ -53,8 +61,8 @@
     max-width: 35%;
     z-index: 3;
 
-    @include mix.respond(screen-950) {
-      max-width: 55%;
+    @include mix.respond(screen-500) {
+      width: 30%;
     }
   }
 
