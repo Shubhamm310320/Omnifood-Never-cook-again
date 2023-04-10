@@ -593,6 +593,12 @@ select {
   border-radius: var(--border-radius--circle);
   border: 3px solid var(--color-primary-light--3);
 }
+@media only screen and (max-width: 46.875em) {
+  .delivered__img {
+    max-height: 5.4rem;
+    max-width: 5.4rem;
+  }
+}
 .delivered__img:not(:last-child) {
   margin-right: -1.6rem;
 }
